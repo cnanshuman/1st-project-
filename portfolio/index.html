@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title>Anshuman Portfolio</title>
+    <script src="js/jquery-2.1.1.js"></script>
+    
+    <script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/aos@2.3.0/dist/aos.css"/>	
+</head>
+<body>
+ <header>
+   <section class="bnr" id="home">
+   <div class="wrap">
+    <div class="head">
+        <div class="wrap">
+        <aside class="lft">
+        <a href="index.html"><img src="images/logo-v2.png"></a>
+        </aside>
+        <aside class="rgt">
+            <a class="Hamburger">
+              <span>
+                <div class="line top"></div>
+                <div class="line"></div>
+                <div class="line bottom"></div>
+              </span>
+            </a>
+            <div class="nav">
+              <a class="close-btn">&times;</a> 
+              <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#skill">Skills</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+              </ul>
+            </div>
+          </aside>
+          <div class="clear"></div>
+         
+    </div>
+    </div>
+    <div class="txt">
+<h1>FREELANCE <br>WEBSITE DESIGNER</h1></div></div>
+    <ul class="icn">
+    <li><a href="https://github.com/cnanshuman" target="_blank"><img src="images/fac.png"></a></li>
+    <li><a href="https://www.instagram.com/anshuman_thakur_12/" target="_blank"><img src="images/insta.png"></a></li>
+    <li><a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit" target="_blank"><img src="images/in.png"></a></li>
+    </ul>
+    
+   </section>
+
+  <script type="text/javascript">
+    $(".Hamburger").click(function() {
+      $(this).toggleClass("active");
+      $(".nav").toggleClass("active");
+    });
+  
+    $(".close-btn").click(function() {
+      $(".Hamburger").removeClass("active");
+      $(".nav").removeClass("active");
+    });
+  
+    $(".nav li").click(function() {
+      $(".Hamburger").removeClass("active");
+      $(".nav").removeClass("active");
+    });
+  </script>
+  
+</header>
+
+
+
+<section class="abt" id="about">
+    <div class="wrap">
+        <div >
+            <span>What you can expect from me:</span>
+            <h3>I prioritize tidy layouts, clean typography, and precise alignment to create user-friendly websites. With a passion for minimalism, I strive to enhance the impact of brands' messages, stories, and visuals in every design.</h3>
+        </div>
+        <aside class="lft" data-aos="fade-right" data-aos-duration="3000">
+            <span>All services</span>
+            <ul>
+                <li><span>1.</span><p>Custom Website Design and Development</p></li>
+                <li><span>2.</span><p>Responsive Designs for All Devices</p></li>
+                <li><span>3.</span><p>Intuitive UI/UX for Better Engagement</p></li>
+            </ul>
+        </aside>
+
+        <aside class="rgt" data-aos="fade-left" data-aos-duration="3000">
+            <p>With years of experience in training and designing presentations for domestic enterprises, I have developed a comprehensive understanding of layout presentation, content organization, and the effective use of motion effects. This foundation has equipped me with the skills to create visually compelling and engaging designs. Transitioning into web design, I now leverage this expertise alongside my knowledge of front-end programming to build user-friendly and dynamic websites. My goal is to craft digital experiences that not only showcase brand identities but also enhance user engagement and drive conversions.</p>
+            <a href="downloads/anshuman-websitedesigner-resume.pdf" target="_blank;">More about me</a>
+        </aside>
+        <div class="clear"></div>
+    </div>
+</section>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    // Function to check if an element is in view
+    function isInView(element) {
+        const rect = element.getBoundingClientRect();
+        return rect.top >= 0 && rect.bottom <= (window.innerHeight || document.documentElement.clientHeight);
+    }
+
+    // Function to handle scroll event
+    function onScroll() {
+        const h3Element = document.querySelector('section#about h3');
+        if (h3Element && isInView(h3Element)) {
+            h3Element.classList.add('in-view');
+        } else if (h3Element) {
+            h3Element.classList.remove('in-view');
+        }
+    }
+
+    // Add event listener for scroll
+    window.addEventListener('scroll', onScroll);
+
+    // Check if the element is in view on initial load
+    onScroll();
+});
+</script>
+
+    
+
+
+
+
+<section class="project" id="project">
+<div class="wrap">
+    <div class="heading">
+    <aside class="lft" data-aos="fade-right" data-aos-duration="3000">
+    <h1>Some of the<br>
+        most impressive<br>
+        projects I have<br>
+        worked
+        </h1>
+    </aside>
+    <aside class="rgt" data-aos="fade-left" data-aos-duration="3000">
+    <p>These are just a few projects that I personally enjoy the most. I would be glad to show you a bunch of other projects that I have done so far. Would you like to have a look at them?</p>
+    </aside><div class="clear"></div>
+    </div></div>
+    
+           
+    <div id="container" data-aos="fade-up" data-aos-duration="3000">
+        <section class="panel" id="panel1">
+            <div class="wrap"><aside class="lft">
+            <h2>The Crayons Network</h2>
+            <p>Designed an engaging platform to foster creativity and collaboration among users. Conducted user research and created intuitive wireframes and prototypes, focusing on a playful aesthetic with a cohesive color palette and typography. Prioritized accessibility and user experience, resulting in improved navigation and user satisfaction.</p>
+        <a href=" https://thecrayonsnetwork.com/"target=_blank;>View Project</a>     
+        </aside>
+                
+               <aside class="rgt">
+            <img src="images/project-v1.jpg">
+               </aside><div class="clear"></div></div>
+</section>
+        <section class="panel" id="panel2">
+            <div class="wrap"><aside class="lft">
+                <h2>Osg Alkaline</h2>
+                <p>Designed an engaging platform to foster creativity and collaboration among users. Conducted user research and created intuitive wireframes and prototypes, focusing on a playful aesthetic with a cohesive color palette and typography. Utilized HTML, CSS, JavaScript, and jQuery to implement responsive designs and improve user interaction. Prioritized accessibility and user experience, resulting in enhanced navigation and user satisfaction.</p>
+            <a href="https://osgalkaline.com/"target=_blank;>View Project</a> 
+            </aside>
+                    
+                   <aside class="rgt">
+                <img src="images/project-v2.jpg">
+                   </aside><div class="clear"></div></div>
+</section>
+        <section class="panel" id="panel3">
+            <div class="wrap"><aside class="lft">
+                <h2>Teco Chemical</h2>
+                <p>Designed an engaging platform to foster creativity and collaboration among users. Conducted user research and created intuitive wireframes and prototypes, focusing on a playful aesthetic with a cohesive color palette and typography. Utilized HTML, CSS, JavaScript, and jQuery to implement responsive designs and improve user interaction. Prioritized accessibility and user experience, resulting in enhanced navigation and user satisfaction.</p>
+            <a href="https://www.tecochemicals.com/"target=_blank;>View Project</a>     
+            </aside>
+                    
+                   <aside class="rgt">
+                <img src="images/project-v3.jpg">
+                   </aside><div class="clear"></div></div>
+</section>
+        <section class="panel" id="panel4">
+            <div class="wrap"><aside class="lft">
+                <h2>Skin Aura</h2>
+                <p>Designed an engaging platform to foster creativity and collaboration among users. Conducted user research and created intuitive wireframes and prototypes, focusing on a playful aesthetic with a cohesive color palette and typography. Utilized HTML, CSS, JavaScript, and jQuery to implement responsive designs and improve user interaction. Prioritized accessibility and user experience, resulting in enhanced navigation and user satisfaction.</p>
+            <a href="https://drjasdeepkaur.com/"target=_blank;>View Project</a>     
+            </aside>
+                    
+                   <aside class="rgt">
+                <img src="images/project-v4.jpg">
+                   </aside><div class="clear"></div></div>
+</section>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script>
+    $(document).ready(function() {
+    
+    var controller = new ScrollMagic.Controller();
+
+    // Define the timeline for the horizontal scroll animation
+    var timeline = gsap.timeline();
+
+    // Loop through each panel starting from the second one and add to timeline
+    $('.panel').each(function(index) {
+        if (index > 0) { // Skip the first panel
+            var panelId = $(this).attr('id');
+            var panel = "#" + panelId;
+
+            timeline.to(panel, {x: "-100%", duration: 1, ease: "power2.inOut"});
+        }
+    });
+
+    // Create a ScrollMagic scene
+    new ScrollMagic.Scene({
+        triggerElement: "#container",
+        triggerHook: "onLeave",
+        duration: "300%"
+    })
+    .setPin("#container")
+    .setTween(timeline)
+    .addTo(controller);
+});
+
+    </script>
+             
+</div>
+</section>
+
+
+<section class="skil" data-aos="fade-up" data-aos-duration="3000" id="skill">
+<div class="wrap">
+    <div class="heading">
+        <aside class="lft" data-aos="fade-right" data-aos-duration="3000">
+        <h1>Blending creativity<br>with technical<br> excellence
+            </h1>
+        </aside>
+        <aside class="rgt" data-aos="fade-left" data-aos-duration="3000">
+        <p>My experience working with major brands has significantly enhanced my skillset. These collaborations have provided me with valuable insights and knowledge, allowing me to continually refine my expertise.</p>
+        </aside><div class="clear">
+
+        </div>
+        </div>
+<ul data-aos="zoom-in-up" data-aos-duration="1500" data-aos-easing="ease-in-out">
+<li><div class="box"><img src="images/photoshop.png"></div><h3>Photoshop</h3></li>
+<li><div class="box"><img src="images/html.png"></div><h3>HTML</h3></li>
+<li><div class="box"><img src="images/css.png"></div><h3>CSS</h3></li>
+<li><div class="box"><img src="images/js.png"></div><h3>Java Script</h3></li>
+<li><div class="box"><img src="images/bootstrap.png"></div><h3>Bootstrap</h3></li>
+
+    </div>
+</section>
+
+<section class="edu">
+<div class="wrap">
+
+<div class="heading">
+        <aside class="lft" data-aos="fade-right" data-aos-duration="3000" >
+        <h1>Educated experience<br> driving digital<br> innovation
+            </h1>
+        </aside>
+        <aside class="rgt" data-aos="fade-right" data-aos-duration="3000" >
+        <p>I have over one year of experience as a website designer, specializing in creating user-friendly and visually appealing websites. Currently, I am a first-year BCA student, deepening my technical knowledge in web development. This blend of practical experience and academic learning empowers me to deliver innovative digital Solutions.</p>
+        </aside><div class="clear"></div>
+</div>
+            
+<aside class="lft" data-aos="fade-right" data-aos-duration="3000" >
+    <span>All services</span>
+    <ul>
+    <li><span>1.</span><p>1 Year at Gurus11 Practical experience in web design.</p></li>
+    <li><span>2.</span><p>BCA First-Year Student: Pursuing a Bachelor of Computer Applications.</p></li>
+    <li><span>3.</span><p>Website Design Certification: Completed a professional certification.
+    </p></li>
+    </ul>
+    </aside>
+    
+    <aside class="rgt"  data-aos="fade-left" data-aos-duration="3000" >
+    <p>With over one year of experience as a website designer, I have had the opportunity to work on various live projects, allowing me to develop a strong understanding of user-centric design principles and modern web technologies. My hands-on experience has not only enhanced my technical skills but also sharpened my ability to collaborate with clients and meet their specific needs effectively. Currently, I am pursuing a Bachelor of Computer Applications (BCA) as a first-year student, which provides me with a solid foundation in computer science and programming. Additionally, I have obtained a certification in website design, reflecting my dedication to continuous learning and professional growth in the ever-evolving field of web development. This combination of practical experience, academic knowledge, and certification equips me to deliver innovative and impactful digital solutions.
+
+    </p>
+    
+    </aside>
+    <div class="clear"></div>
+        
+        </div>
+
+
+
+</div>
+</section>
+
+<section class="cont" data-aos="fade-up" data-aos-duration="3000" id="contact">
+<div class="wrap">
+<span>That's all for now</span>
+<h3>Got a project in mind?<br>
+Let’s talk</h3>
+
+<div class="line" data-aos="fade-up" data-aos-duration="3000" ></div>
+
+<ul data-aos="fade-up" data-aos-duration="3000" >
+<li><a href="mailto:thakuranshuman341@gmail.com"><span>Email Id:</span>thakuranshuman341@gmail.com</a>
+</li>
+
+<li><a href="tel:+919582276626"><span>Phone No:</span>+91 9582 27 6626</a>
+</li>
+</ul>
+</div>
+</section>
+
+<footer >
+    <div class="moving-text">
+<h3>ANSHUMAN</h3></div>
+</footer>
+<script>    AOS.init({
+    duration: 300,
+  })</script>
+
+
+
+
+</body>
+
+</html>
